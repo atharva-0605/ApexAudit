@@ -1,0 +1,23 @@
+{
+  "name": "apexaudit-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ApexAudit - Intelligent decision-readiness web platform",
+  "scripts": {
+    "dev:frontend": "npm run dev --prefix frontend",
+    "build:frontend": "npm run build --prefix frontend",
+    "start:frontend": "npm run start --prefix frontend",
+    "dev:backend": "cd backend && venv\\Scripts\\activate && uvicorn app.main:app --reload --port 8000",
+    "start:backend": "cd backend && venv\\Scripts\\activate && uvicorn app.main:app --host 0.0.0.0 --port 8000"
+  },
+  "keywords": [
+    "apexaudit",
+    "decision-readiness",
+    "quote-verification",
+    "pre-mortem",
+    "nextjs",
+    "fastapi"
+  ],
+  "author": "Antigravity Team",
+  "license": "MIT"
+}
